@@ -1,0 +1,86 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Diseño del fondo*/
+.pres {
+    display: table;
+    position: relative;
+    background-image: url(/src/public/img/cero.jpg);
+    background-size: contain;
+    padding: 150px 0;
+    color: #fff;
+    width: 100%;
+    height: 54vh;
+  }
+  
+.pres:after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  
+.pres .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+.pres-brand {
+    margin-bottom: 75px;
+    display: inline-block;
+}
+  
+.pres-brand:hover {
+    opacity: .75;
+}
+    /*Diseño del texto*/
+
+.parra {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    margin: 45px 0 75px 0;
+    color: #fff;
+}
+
+p {
+    line-height: 1.55;
+    color: #333;
+    font-size: 400;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+h1{
+    color: white;
+}
+/*Diseño de los botones*/
+  
+.btn {
+    background-color: #199EB8;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color: #fff;
+    padding: 15px 45px;
+    border-radius: 50px;
+}
+  
+a {
+    transition: 0.5s;
+    text-decoration: none;
+    color: #199EB8;
+}
+  

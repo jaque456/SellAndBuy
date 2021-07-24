@@ -1,0 +1,29 @@
+<body> 
+        <section id="pres" class="pres">
+        <form class="formulario" method="POST">
+            <h1>Crea tu cuenta</h1>
+            <div class="contenedor">
+                <div class="input-contenedor">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" required="" minlength="4" maxlength="30" id="NomUsuario" name="NomUsuario" placeholder="Nombre Completo">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" required="" name="correo" id="correo" type="email" placeholder="Correo Electronico">
+                </div>
+                <div id="checkcorreo"></div>
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input required="" name="password" id="password" type="password" placeholder="Contraseña">
+                </div>
+                <!--<div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input required="" type="password" id="ConPassword" name="ConPassword" placeholder="Confirmación Contraseña">
+                </div>-->
+                <div id="checkcontraseña"></div>
+                <input type="submit" id="registrarNuevo" value="Registrate" class="button">
+                <p>¿Ya tienes una cuenta?<br><p></p><a class="link" href="/usuario/login">Iniciar Sesión</a></p>
+            </div>
+        </form>
+    </section>
+    </body>
