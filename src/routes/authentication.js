@@ -20,6 +20,14 @@ router.get('/login',(req, res) => {
     res.render('usuario/login');
 });
 
+router.post('/login', (req, res, next)=>{
+    passport.authenticate('local.login', {
+        successRedirect : '/login',
+        failureRedirect: '/registro',
+        failureFlash: true
+    })(req, res, next)
+});
+
 router.get('/perfilVende',(req, res) => {
     res.render('usuario/perfilVende');
 });
