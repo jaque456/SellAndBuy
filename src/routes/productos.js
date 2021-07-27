@@ -3,6 +3,7 @@ const router = express.Router();
 const pool = require('../database');
 
 router.get('/publicarProd',(req, res) => {
+    req.flash('success', 'Producto publicado correctamente');
     res.render('productos/publicarProd');
 });
 
