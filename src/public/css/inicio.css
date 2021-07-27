@@ -12,7 +12,7 @@ body {
 .pres {
     display: table;
     position: relative;
-    background-image: url(/src/public/img/cero.jpg);
+    background-image: url(../img/cero.jpg);
     background-size: contain;
     padding: 150px 0;
     color: #fff;
